@@ -17,8 +17,14 @@ document.getElementById('orderForm').addEventListener('submit', function(event) 
     // Если все элементы формы прошли валидацию
     if (isValid) {
         updateOrderData(); // Обновляем данные заказа
+        clearForm(); // Очищаем поля формы
     }
 });
+
+// Функция для очистки полей формы
+function clearForm() {
+    document.getElementById('orderForm').reset(); // Сбрасываем значения полей формы
+}
 
 // Добавляем обработчик события клика по кнопке отображения данных заказа
 document.getElementById('showDataBtn').addEventListener('click', function() {
