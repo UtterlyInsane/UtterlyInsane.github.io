@@ -1,0 +1,203 @@
+body {
+    background-image: url(../../img/1.jpg);
+    background-size: 30%;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  .imp{
+    position: relative;
+    align-items: center;
+    width: 100%;
+  }
+
+  .inner{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    left: 38%;
+    top: 45%;
+    font-size: 30px;
+    font-weight: 400;
+  }
+
+  header {
+    background-color: #fff;
+    color: #000;
+    padding: 20px;
+    text-align: center;
+    animation-duration: 2s;
+    animation-name: slidein;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  @keyframes slidein {
+    from {
+      margin-left: 200%;
+      width: 100%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    position: relative;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #000;
+  }
+  
+  nav ul li:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 0;
+    z-index: 1;
+    width: 200px;
+  }
+  
+  .dropdown-menu li {
+    display: block;
+    transition: all 0.5s;
+  }
+  
+  .dropdown-menu li a {
+    padding: 10px 20px;
+    display: block;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .dropdown-menu li:hover {
+    background-color: #f0f0f0;
+    font-size: 17px;
+  }
+
+  section{
+    padding: 14px;
+    background-color: #fff;
+    width: 80%;
+    opacity: 0;
+    animation: ani 2.5s forwards;
+  }
+
+  @keyframes ani {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    bottom: 0%;
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  footer > div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  .circle {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+  }
+/* Оформление формы */
+  .form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+.radio-container {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    background-color: #5e5e5e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#displayData {
+    margin-top: 20px;
+}
