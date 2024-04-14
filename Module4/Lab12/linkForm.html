@@ -67,8 +67,8 @@
       </div>
       <div>
         <!-- 10 цифр номера телефона -->
-          <label for="phone">Телефон (Формат: ХХХХХХХХХХ):</label>
-          <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+          <label for="phone">Телефон (Формат: +7ХХХХХХХХХХ):</label>
+          <input type="tel" id="phone" name="phone" maxlength="12" pattern="\+7[0-9]{10}" required>
       </div>
       <div>
         <!-- Выподающий список товаров -->
