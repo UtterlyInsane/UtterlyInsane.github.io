@@ -33,7 +33,7 @@
     <div class="header__top">
       <div class="container header__container header__top-container">
         <a href="/" class="logo">
-          <img src="img/logo.svg" alt="Logo">
+          <img src="img/logo.svg" alt="Avion Logo">
         </a>
         <div class="header__details">
           <ul class="list-reset header__list">
@@ -119,56 +119,122 @@
     </div>
   </header>
   <main>
-    <section class="about-hero">
+    <section class="product-info">
       <div class="container">
-        <div class="about-hero__content">
-          <h1 class="about-hero__title">
-            Стремление к уникальности и сервис наивысшего уровня - главные принципы нашего бренда
-          </h1>
-          <a href="#" class="btn btn--theme-light about-hero__btn">Наша продукция</a>
+        <div class="product-info__content">
+          <div class="product-info__image">
+            <img src="img/product.jpg" srcset="img/product_2x.jpg 2x" aria-hidden="true" width="607" height="661"
+              alt="">
+          </div>
+          <div class="product-info__text">
+            <div class="product-info__top">
+              <h1 class="product-info__title">The Dandy Chair</h1>
+              <div class="product-info__price">£250</div>
+            </div>
+            <div class="product-info__item">
+              <h2 class="product-info__subtitle">Product description</h2>
+              <p class="product-info__descr">
+                A&nbsp;timeless design, with premium materials features as&nbsp;one of&nbsp;our most popular and iconic
+                pieces. The dandy chair is&nbsp;perfect for any stylish living space with beech legs and lambskin
+                leather
+                upholstery.
+              </p>
+            </div>
+            <div class="product-info__item">
+              <h2 class="product-info__subtitle">Размеры</h2>
+              <dl class="product-info__chars">
+                <div class="product-info__chars-item">
+                  <dt class="product-info__chars-caption">Высота</dt>
+                  <dd class="product-info__chars-text">
+                    110см
+                  </dd>
+                </div>
+                <div class="product-info__chars-item">
+                  <dt class="product-info__chars-caption">Ширина</dt>
+                  <dd class="product-info__chars-text">
+                    75см
+                  </dd>
+                </div>
+                <div class="product-info__chars-item">
+                  <dt class="product-info__chars-caption">Глубина</dt>
+                  <dd class="product-info__chars-text">
+                    50см
+                  </dd>
+                </div>
+              </dl>
+            </div>
+            <div class="product-info__item">
+              <h2 class="product-info__subtitle">Количество</h2>
+              <div class="stepper">
+                <button class="btn-reset stepper__btn stepper__btn--minus"
+                  aria-label="Decrease quantity" disabled>-</button>
+                <input type="number" min="1" max="105" value="1" class="stepper__input">
+                <button class="btn-reset stepper__btn stepper__btn--plus" aria-label="Increase quantity">+</button>
+              </div>
+            </div>
+            <div class="product-info__btns">
+              <button class="btn btn--theme-darker">В корзину</button>
+              <button class="btn btn--theme-white">В избранное</button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    <section class="brand-info">
+    <section class="products">
       <div class="container">
-        <div class="brand-info__content">
-          <div class="brand-info__text">
-            <h2 class="title title--large title--mb-small-xs brand-info__title">
-              Все начинается с идеи
-            </h2>
-            <p class="brand-info__descr">
-              Международный бренд, зародившийся в Казахстане. Наша история начиналась именно здесь
-            </p>
-            <button class="btn btn--theme-dark brand-info__btn">Посмотреть коллекцию</button>
-          </div>
-          <div class="brand-info__image">
-            <img src="img/brand-info.jpg" srcset="img/brand-info_2x.jpg" aria-hidden="true" width="630" height="478"
-              alt="" class="brand-info__pic">
-          </div>
+        <h2 class="title title--large title--mb-small products__title">Вам может понравится</h2>
+        <ul class="list-reset products__list products__list--mobile-slider grid">
+          <li class="products__item products__item--big">
+            <article class="product">
+              <div class="product__top">
+                <img src="img/product-5.jpg" srcset="img/product-5_2x.jpg 2x" aria-hidden="true" width="630"
+                  height="375" loading="lazy" alt="" class="product__image">
+              </div>
+              <div class="product__content">
+                <h3 class="product__title">
+                  <a href="#" class="product__link">Диван</a>
+                </h3>
+                <span class="product__price">98000 тг</span>
+              </div>
+            </article>
+          </li>
+          <li class="products__item">
+            <article class="product">
+              <div class="product__top">
+                <img src="img/product-6.jpg" srcset="img/product-6_2x.jpg 2x" aria-hidden="true" width="305"
+                  height="375" loading="lazy" alt="" class="product__image">
+              </div>
+              <div class="product__content">
+                <h3 class="product__title">
+                  <a href="#" class="product__link">Стул "Денди"</a>
+                </h3>
+                <span class="product__price">25000 тг</span>
+              </div>
+            </article>
+          </li>
+          <li class="products__item">
+            <article class="product">
+              <div class="product__top">
+                <img src="img/product-7.jpg" srcset="img/product-7_2x.jpg 2x" aria-hidden="true" width="305"
+                  height="375" loading="lazy" alt="" class="product__image">
+              </div>
+              <div class="product__content">
+                <h3 class="product__title">
+                  <a href="#" class="product__link">Стул "Денди"</a>
+                </h3>
+                <span class="product__price">25000 тг</span>
+              </div>
+            </article>
+          </li>
+        </ul>
+        <div class="centered">
+          <a href="#" class="btn btn--theme-light products__btn">Показать коллекцию</a>
         </div>
-      </div>
-    </section>
-    <section class="about about--reverse">
-      <div class="about__content">
-        <div class="about__info">
-          <h2 class="title title--small about__title">
-            Мы не просто находим индивидуальный подход к клиентам. Мы меняемся ради них
-          </h2>
-          <p class="about__descr">
-            Когда Уют только зародился, идея была проста. Создавать высококачественную мебель по приемлемой для каждого цене
-          </p>
-          <p class="about__descr">
-            Ручная работа, уникальность и уют - вот для чего мы существуем. Мы обустроили множество домов, магазинов и выставок по всему миру.
-          </p>
-          <button class="btn btn--theme-white about__btn">Свяжитесь с нами</button>
-        </div>
-        <img src="img/about-2.jpg" srcset="img/about-2_2x.jpg 2x" aria-hidden="true" width="720" height="603"
-          loading="lazy" alt="" class="about__image">
       </div>
     </section>
     <section class="benefits benefits--about">
       <div class="container">
-        <h2 class="title title--small title--centered title--mb-large">Что выделяет наш бренд</h2>
+       <h2 class="title title--small title--centered title--mb-large">Что выделяет наш бренд</h2>
         <ul class="list-reset grid benefits__list">
           <li class="benefits__item benefits__item--next">
             <h3 class="benefits__subtitle">Стандарты будущего сегодня</h3>
